@@ -1,20 +1,9 @@
 <script>
     import Button from "./lib/Button.svelte";
 
-    /*let endpointMicroservice1 = "http://localhost:5010/api/v1/microservice1";
-    let endpointMicroservice2 = "http://localhost:5020/api/v1/microservice2";
-    let endpointMicroservice3 = "http://localhost:5030/api/v1/microservice3";*/
-
-    /*let endpointMicroservice1 = "http://localhost/api/v1/microservice1";
-    let endpointMicroservice2 = "http://localhost/api/v1/microservice2";
-    let endpointMicroservice3 = "http://localhost/api/v1/microservice3";*/
-
-    let endpointMicroservice1 =
-        "http://microservice1:5001/api/v1/microservice1";
-    let endpointMicroservice2 =
-        "http://microservice2:5002/api/v1/microservice2";
-    let endpointMicroservice3 =
-        "http://microservice3:5003/api/v1/microservice3";
+    let endpointMicroservice1 = "http://localhost:80/api/v1/microservice1";
+    let endpointMicroservice2 = "http://localhost:80/api/v1/microservice2";
+    let endpointMicroservice3 = "http://localhost:80/api/v1/microservice3";
 </script>
 
 <main>

@@ -11,15 +11,20 @@
         isLoading = true;
         counter += 1;
         try {
-            const response = await fetch(endpoint);
+            const response = await fetch(endpoint, {
+                method: "GET",
+                headers: {
+                    Version: "v1",
+                },
+            });
             const data = await response.text();
             microserviceVersion = data;
+            isLoading = false;
             console.log(microserviceVersion);
         } catch (error) {
             requestFailed = true;
-            console.error(error);
-        } finally {
             isLoading = false;
+            console.error(error);
         }
     }
 </script>
